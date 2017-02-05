@@ -16,7 +16,7 @@ Package.onUse(function(api) {
             'templating',
             'ui' ],
             'client' );
-  api.mainModule('inputeditable.js');
+  api.mainModule('inputeditable.js', 'client');
   api.addFiles([
      'lib/inputeditable.html',
      'lib/inputeditable.js'
@@ -28,5 +28,5 @@ Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
   api.use('nubestra:inputeditable');
-  api.mainModule('inputeditable-tests.js');
+  api.mainModule('inputeditable-tests.js', 'client');
 });
