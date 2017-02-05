@@ -13,9 +13,10 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.4.2.3');
   api.use([ 'ecmascript',
-            'templating',
-            'ui' ],
+            'ui',
+            'underscore' ],
             'client' );
+  api.use('templating', 'client');
   api.mainModule('inputeditable.js', 'client');
   api.addFiles([
      'lib/inputeditable.html',
