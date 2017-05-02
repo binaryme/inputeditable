@@ -21,6 +21,7 @@ Package.onUse(function(api) {
   api.addFiles([
      'lib/inputeditable.html',
      'lib/textareae.html',
+     'lib/inputnumber.html',
      'lib/inputeditable.js'
   ],
   'client' );
